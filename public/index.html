@@ -6,11 +6,35 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>mobiled</title>
+    <style>
+      html{
+			font-size: calc(100vw / 7.5);
+		}
+		body{
+			font-size: 0.24rem;
+		}
+    </style>
+    <!-- 引入swiper的css类库 -->
+	<link rel="stylesheet" href="<%= BASE_URL %>css/swiper.min.css" />
+	<!-- 引入mint-ui的css类库 -->
+	<!-- <link rel="stylesheet" href="https://unpkg.com/mint-ui/lib/style.css"> -->
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1217950_rzjtsus0nib.css">
+  <!-- icon 图标引入 -->
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1217967_9o415spjz8d.css">
   </head>
   <body>
+    <!-- 如果需要通过script标签引入第三方的js文件，要把它放在public目录下 -->
+  <script src="<%= BASE_URL %>js/swiper.min.js"></script>
+  <!-- <div>这个变量的值是<%= BASE_URL %></div> -->
     <noscript>
       <strong>We're sorry but mobiled doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+
+    <!-- 
+		单页面（SPA）
+		1.整个项目，只有一个index.html
+		2.使用前端路由进行内容的切换
+     -->
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
