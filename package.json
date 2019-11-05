@@ -16,7 +16,7 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mint-ui": "^2.2.13",
-    "mongoose": "^5.6.2",
+    "mongoose": "^5.7.5",
     "swiper": "^4.5.0",
     "vant": "^2.0.3",
     "vue": "^2.6.10",
